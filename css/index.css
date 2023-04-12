@@ -450,7 +450,6 @@ body{
     position: absolute;
     width: 42px;
     height: 21px;
-    background-color: red;
     right: -20px;
     top: -35px;
     border-radius: 5px;
@@ -467,50 +466,28 @@ body{
     transform: translateX(-50%);
     bottom: -20px;
 }
-.box-Yearly .box-body .blue .text .body-hr .hr span::after{
+.box-Yearly .box-body .text .body-hr.c-blue .hr span::after{
     border-color: var(--blue-color) transparent transparent transparent;
 }
-.box-Yearly .box-body .blue .text .body-hr .hr,
-.box-Yearly .box-body .blue .text .body-hr .hr span{
-    background-color: var(--blue-color);
-
-}
-.box-Yearly .box-body .blue .icon,
-.box-Yearly .box-body .blue .text .body-hr{
+.box-Yearly .box-body .icon.c-blue,
+.box-Yearly .box-body .text .body-hr.c-blue{
     background-color: rgb(0 117 255 / 20%);;
 }
-.box-Yearly .box-body .blue .icon{
-    color: var(--blue-color);
-}
-.box-Yearly .box-body .orange .text .body-hr .hr span::after{
+
+.box-Yearly .box-body  .text .body-hr.c-orange .hr span::after{
     border-color: var(--orange-color) transparent transparent transparent;
 }
-.box-Yearly .box-body .orange .text .body-hr .hr,
-.box-Yearly .box-body .orange .text .body-hr .hr span{
-    background-color: var(--orange-color);
-
-}
-.box-Yearly .box-body .orange .icon,
-.box-Yearly .box-body .orange .text .body-hr{
+.box-Yearly .box-body  .icon.c-orange,
+.box-Yearly .box-body  .text .body-hr.c-orange{
     background-color: rgb(245 158 11 / 20%);
 }
-.box-Yearly .box-body .orange .icon{
-    color: var(--orange-color);
-}
-.box-Yearly .box-body .green .text .body-hr .hr span::after{
+
+.box-Yearly .box-body .text .body-hr.c-green .hr span::after{
     border-color: var(--green-color) transparent transparent transparent;
 }
-.box-Yearly .box-body .green .text .body-hr .hr,
-.box-Yearly .box-body .green .text .body-hr .hr span{
-    background-color: var(--green-color);
-
-}
-.box-Yearly .box-body .green .icon,
-.box-Yearly .box-body .green .text .body-hr{
+.box-Yearly .box-body  .icon.c-green,
+.box-Yearly .box-body  .text .body-hr.c-green{
     background-color:rgb(34 197 94 / 20%);
-}
-.box-Yearly .box-body .green .icon{
-    color: var(--green-color);
 }
 .box-Tickets .box-body{
     display: grid;
@@ -817,14 +794,10 @@ hr{
     font-size: 14px;
     
 }
-.box-Reminders .box-body .shape.blue{border-right-color: var(--blue-color);}
-.box-Reminders .box-body .shape.blue div{background-color: var(--blue-color);}
-.box-Reminders .box-body .shape.green{border-right-color: var(--green-color);}
-.box-Reminders .box-body .shape.green div{background-color: var(--green-color);}
-.box-Reminders .box-body .shape.orange{border-right-color: var(--orange-color);}
-.box-Reminders .box-body .shape.orange div{background-color: var(--orange-color);}
-.box-Reminders .box-body .shape.red{border-right-color: var(--red-color);}
-.box-Reminders .box-body .shape.red div{background-color: var(--red-color);}
+.box-Reminders .box-body .shape.c-blue{border-right-color: var(--blue-color);}
+.box-Reminders .box-body .shape.c-green{border-right-color: var(--green-color);}
+.box-Reminders .box-body .shape.c-orange{border-right-color: var(--orange-color);}
+.box-Reminders .box-body .shape.c-red{border-right-color: var(--red-color);}
 .box-Latest-Post .box-body .block-user{
     display: flex;
     align-items: center;
