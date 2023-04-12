@@ -924,14 +924,15 @@ hr{
 .box-project-table table tbody td img:not(:first-child){
     margin-left: -23px;
 }
-.box-project-table table tbody td .button a{
+.box-project-table table tbody td .button {
     padding: 5px 10px ;
     border-radius: 5px;
     color: white;
     font-size: 15px;
     cursor: pointer;
+    text-align: center;
 }
-.box-project-table table tbody td .button.orange a{
+/* .box-project-table table tbody td .button.orange a{
     background-color: var(--orange-color);
 }
 .box-project-table table tbody td .button.green a{
@@ -942,7 +943,7 @@ hr{
 }
 .box-project-table table tbody td .button.red a{
     background-color: var(--red-color);
-}
+} */
 .control{
     display: flex;
     justify-content: space-between;
