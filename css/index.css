@@ -142,7 +142,7 @@ body{
 }
 .page .nav .sections .section:hover,
 .page .nav .sections .section.active{
-    background-color: red;
+    background-color: #EEE;
 }
 @media (max-width:766px){
     .page .nav .sections{
