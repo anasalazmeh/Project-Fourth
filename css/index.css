@@ -69,6 +69,7 @@ body{
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    outline: ;
 }
 .page .nav{
     width: 300px;
@@ -1155,7 +1156,7 @@ label{
     transform: rotate(360deg) ;
 }
 .box-Widgets-Control .box-body .block .checkbox input:checked+.checkbox-div{
-    outline-color: var(--blue-color);
+    outline-color: red;
     /* border: none; */
 
 }
