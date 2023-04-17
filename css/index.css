@@ -706,11 +706,11 @@ hr{
     height: 28px ;
     border-radius: 50%;
     border: 3px solid white;
-    outline: 3px solid var(--blue-color);
-    -webkit-outline: 3px solid var(--blue-color);
-    -moz-outline: 3px solid var(--blue-color);
-    -o-outline: 3px solid var(--blue-color);
-    -ms-outline: 3px solid var(--blue-color);
+    outline: 3px solid var(--red-color);
+    -webkit-outline: 3px solid var(--red-color);
+    -moz-outline: 3px solid var(--red-color);
+    -o-outline: 3px solid var(--red-color);
+    -ms-outline: 3px solid var(--red-color);
     background-color: white;
     margin-right: 30px;
     position: relative;
