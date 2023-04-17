@@ -142,7 +142,7 @@ body{
 }
 .page .nav .sections .section:hover,
 .page .nav .sections .section.active{
-    background-color: #EEE;
+    background-color: #f6f6f6;
 }
 @media (max-width:766px){
     .page .nav .sections{
@@ -932,42 +932,28 @@ hr{
     cursor: pointer;
     text-align: center;
 }
-/* .box-project-table table tbody td .button.orange a{
-    background-color: var(--orange-color);
-}
-.box-project-table table tbody td .button.green a{
-    background-color: var(--green-color);
-}
-.box-project-table table tbody td .button.blue a{
-    background-color: var(--blue-color);
-}
-.box-project-table table tbody td .button.red a{
-    background-color: var(--red-color);
-} */
 .control{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
 }
-.checkox{
+
+/* .checkox{
     border-radius: 50px;
-    width: 80px;
-    height: 30px;
-    position: relative;
     background-color:#CCC;
-    left: 0%;
-    top: 0;
-} 
+   
+}  */
+
 .checkox .toggle-switch{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    position: relative;
+    height: 30px;
+    width: 80px;
     border-radius: 50px;
-    left: 0%;
-    top: 0;
     transition: 0.2s;
     cursor: pointer;
+    background-color:#CCC;
+
 } 
 .checkox .toggle-checkbox{
     appearance: none;
@@ -982,8 +968,10 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    left:  3px;
-    top: 2px;
+    /* left:  0%; */
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
     transition: 0.2s;
 }
 .checkox .toggle-switch .fa-xmark{
@@ -1006,7 +994,7 @@ hr{
     display: none;
 }
 .checkox .toggle-checkbox:checked +.toggle-switch>span{
-    left: 52px;
+    left: calc(100%/1.5);
 }
 .textarea textarea{
     width: 100%;
