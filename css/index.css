@@ -1130,13 +1130,15 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
     margin-right: 10px;
 }
 .box-Widgets-Control .box-body .block .checkbox .checkbox-div i{
     background-color: var(--blue-color);
-    width: 100%;
-    height: 100%;
+    width: 156%;
+    /* border-radius: 5px; */
+    border: 5px solid var(--blue-color);
+    height: 102%;
     color: white;
     font-size: 14px;
     transform:scale(-1%);
@@ -1152,6 +1154,7 @@ label{
 }
 .box-Widgets-Control .box-body .block .checkbox input:checked+.checkbox-div{
     border-color: var(--blue-color);
+
 }
 .box-Backup-Manager .box-body .radio input{
     width: 20px;
