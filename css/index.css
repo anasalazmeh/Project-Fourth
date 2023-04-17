@@ -69,7 +69,7 @@ body{
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    outline: ;
+ 
 }
 .page .nav{
     width: 300px;
@@ -707,6 +707,10 @@ hr{
     border-radius: 50%;
     border: 3px solid white;
     outline: 3px solid var(--blue-color);
+    -webkit-outline: 3px solid var(--blue-color);
+    -moz-outline: 3px solid var(--blue-color);
+    -o-outline: 3px solid var(--blue-color);
+    -ms-outline: 3px solid var(--blue-color);
     background-color: white;
     margin-right: 30px;
     position: relative;
@@ -1125,7 +1129,7 @@ label{
 }
 .box-Widgets-Control .box-body .block .checkbox .checkbox-div{
     /* background-color: red; */
-    outline: 2px solid #888;
+    border: 2px solid #888;
     border-radius: 5px;
     width: 20px ;
     height: 20px;
@@ -1140,7 +1144,7 @@ label{
 .box-Widgets-Control .box-body .block .checkbox .checkbox-div i{
     background-color: var(--blue-color);
     width: 20px;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     height: 20px;
     color: white;
     font-size: 14px;
@@ -1156,7 +1160,7 @@ label{
     transform: rotate(360deg) ;
 }
 .box-Widgets-Control .box-body .block .checkbox input:checked+.checkbox-div{
-    outline-color: red;
+    border-color: var(--blue-color);
     /* border: none; */
 
 }
