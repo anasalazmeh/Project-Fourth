@@ -68,7 +68,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    /* overflow: hidden; */
  
 }
 .page .nav{
@@ -278,7 +278,7 @@ body{
     background-color: white;
     border-radius: 10px;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     /* padding-top: 20px; */
     padding-bottom: 20px;
     
@@ -414,7 +414,7 @@ body{
 }
 .box-Yearly .box-body .block-icon .icon {
     width:120px;
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -881,15 +881,11 @@ hr{
 .box-Social-Media-Stats .box-body .block.twitter .buton{
     background-color: #1da1f2;
 }
+
+
+
 .box-project-table{
     grid-column: span 2;
-
-}
-@media(max-width:1200px){
-    .box-project-table{
-        grid-column: 1;
-        overflow: scroll;
-    }
 }
 .box-project-table table{
     width: 100%;
@@ -898,14 +894,22 @@ hr{
     font-size: 18px;
     font-weight: 500;
 }
-
 @media(max-width:1200px){
-    .box-project-table table{
-    width: 1150px;
-    
+    .box-project-table{
+        grid-column: 1;
     }
     .box-project-table .box-body{
-        width: 1190px;
+        width: 100%;
+        padding:0 20px;
+        
+    }
+    .box-project-table .box-body .tables{
+        overflow-x: scroll;
+        padding: 0;
+    }
+    .box-project-table table{
+        width: 1200px;
+        padding: 0;
     }
 }
 .box-project-table table thead th{
@@ -1138,18 +1142,19 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin-right: 10px;
 }
 .box-Widgets-Control .box-body .block .checkbox .checkbox-div i{
     background-color: var(--blue-color);
-    width: 20px;
+    width: 22px;
     border-radius: 5px;
-    height: 20px;
+    height: 22px;
     color: white;
     font-size: 14px;
     transform:scale(-1%);
     visibility:hidden;
+    border: 2px solid var(--blue-color);
     transition: 0.3s;
 }
 .box-Widgets-Control .box-body .block .checkbox input:checked+.checkbox-div i{
@@ -1465,7 +1470,7 @@ font-size: 13px;
     padding: 10px 0;
 }
 .box-My-Skills .box-body .block-text div{
-    width: auto;
+    /* width: auto; */
     padding: 5px 10px;
     margin-left: 5px;
     background-color: #EEE;
@@ -1473,8 +1478,19 @@ font-size: 13px;
     font-size: 15px;
 }
 @media (max-width:766px){
-    .box-My-Skills .box-body .block-text div{
-        font-size: 2vw;
+    .box-My-Skills .box-header{
+        margin-top: 10px;
+    }
+    .box-My-Skills .box-body .block-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        
+    }
+    .box-My-Skills .box-body .block-text div:not(:last-child){
+        margin-bottom: 10px;
     }
 }
 .box-My-Skills .box-body .block-footer{
@@ -1511,6 +1527,7 @@ font-size: 13px;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-gap: 20px 20px;
     padding: 0 20px;
+    margin: 10px 0;
 }
 .container-Courses .box-Courses{
     position: relative;
