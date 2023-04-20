@@ -704,13 +704,17 @@ hr{
 .box-Last-Project .box-body .block .shape{
     width: 28px ;
     height: 28px ;
-    border-radius: 50%;
     border: 3px solid white;
-    outline: 3px solid var(--red-color);
-    -webkit-outline: 3px solid var(--red-color);
-    -moz-outline: 3px solid var(--red-color);
-    -o-outline: 3px solid var(--red-color);
-    -ms-outline: 3px solid var(--red-color);
+    -webkit-outline: 3px solid var(--orange-color);
+    -moz-outline: 3px solid var(--orange-color);
+    -o-outline: 3px solid var(--orange-color);
+    -ms-outline: 3px solid var(--orange-color);
+    outline: 3px solid var(--orange-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
     background-color: white;
     margin-right: 30px;
     position: relative;
