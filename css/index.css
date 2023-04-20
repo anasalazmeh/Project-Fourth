@@ -68,7 +68,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-  
+  overflow: hidden;
  
 }
 .page .nav{
@@ -177,6 +177,7 @@ body{
    
     width: 100%;
     background-color: #f1f5f9;
+    overflow: hidden;
 }
 .page .main .header{
     display: flex;
@@ -268,7 +269,7 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
-    overflow: hidden;
+
 }
 @media (max-width:766px){
     .main .container{
@@ -711,19 +712,20 @@ hr{
     margin-right: 30px;
     position: relative;
     z-index: 2;
+    box-sizing: border-box;
 }
 .box-Last-Project .box-body .block .shape::after{
     content: "";
     position: absolute;
-    width: 125%;
-    height: 125%;
+    width: 29px;
+    height: 29px;
     border-radius: 50%;
     /* background-color: red; */
-    border: 3px solid var(--blue-color);
-    left: 50%;
+    border: 4px solid var(--blue-color);
+    left: 50.5%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: -1;
+  
 }
 .box-Last-Project .box-body .block:not(:last-child) .shape::before{
     content: "";
