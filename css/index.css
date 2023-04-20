@@ -68,7 +68,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+  
  
 }
 .page .nav{
@@ -268,6 +268,7 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 @media (max-width:766px){
     .main .container{
@@ -705,20 +706,24 @@ hr{
     width: 28px ;
     height: 28px ;
     border: 3px solid white;
-    -webkit-outline: 3px solid var(--orange-color);
-    -moz-outline: 3px solid var(--orange-color);
-    -o-outline: 3px solid var(--orange-color);
-    -ms-outline: 3px solid var(--orange-color);
-    outline: 3px solid var(--orange-color);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%;
     background-color: white;
     margin-right: 30px;
     position: relative;
     z-index: 2;
+}
+.box-Last-Project .box-body .block .shape::after{
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    border-radius: 50%;
+    /* background-color: red; */
+    border: 3px solid var(--blue-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
 }
 .box-Last-Project .box-body .block:not(:last-child) .shape::before{
     content: "";
