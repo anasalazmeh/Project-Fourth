@@ -93,7 +93,7 @@ body{
         width: 100px
     }
     .page .nav .logo h1{
-        font-size: 2.5vw;
+        font-size: 2.8vw;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -308,7 +308,11 @@ body{
 
 .main .container .box-Welcome .box-header .image img{
     width: 180px
-    
+}
+@media (max-width:766px){
+    .main .container .box-Welcome .box-header .image img{
+        width: 100%
+    }
 }
 .main .container .box-Welcome .block{
     padding-top: 50px;
@@ -966,11 +970,9 @@ hr{
     margin-top: 10px;
 }
 
-/* .checkox{
-    border-radius: 50px;
-    background-color:#CCC;
-   
-}  */
+.checkox{
+    width: 80px;
+} 
 
 .checkox .toggle-switch{
     position: relative;
@@ -1286,6 +1288,7 @@ label{
     border-right: 1px solid #EEE;
     text-align: center;
     width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1546,10 +1549,17 @@ font-size: 13px;
     padding: 0 20px;
     margin: 20px 0;
 }
+@media (max-width:766px){
+    .container-Courses{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
+    }
+}
 .container-Courses .box-Courses{
     position: relative;
     border-radius: 5px;
     background-color: white;
+    /* overflow: hidden; */
 
 }
 .container-Courses .box-Courses .image-profile img{
@@ -1582,6 +1592,9 @@ font-size: 13px;
     padding: 0px 10px ;
     font-size: 14px;
     transform: translateY(-22px);
+}
+.box-Friends{
+    overflow: hidden;
 }
 .box-Friends .icons-header{
     position: absolute;
