@@ -68,7 +68,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* overflow: hidden; */
+    overflow: hidden;
  
 }
 .page .nav{
@@ -890,6 +890,7 @@ hr{
 
 .box-project-table{
     grid-column: span 2;
+    overflow: hidden;
 }
 .box-project-table table{
     width: 100%;
@@ -904,7 +905,7 @@ hr{
     }
     .box-project-table .box-body{
         width: 100%;
-        padding:0 20px;
+        /* padding:0 20px; */
         
     }
     .box-project-table .box-body .tables{
