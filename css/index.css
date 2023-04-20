@@ -90,7 +90,7 @@ body{
 }
 @media (max-width:766px){
     .page .nav{
-        width: 60px
+        width: 100px
     }
     .page .nav .logo h1{
         font-size: 2.5vw;
