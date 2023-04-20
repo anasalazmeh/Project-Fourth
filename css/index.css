@@ -809,6 +809,11 @@ hr{
     font-size: 14px;
     
 }
+@media(max-width:766px){
+    .box-Reminders .shape.c-red + .text h4{
+        font-size: 12px !important;
+    }
+}
 .box-Reminders .box-body .shape.c-blue{border-right-color: var(--blue-color);}
 .box-Reminders .box-body .shape.c-green{border-right-color: var(--green-color);}
 .box-Reminders .box-body .shape.c-orange{border-right-color: var(--orange-color);}
