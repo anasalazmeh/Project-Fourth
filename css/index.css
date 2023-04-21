@@ -1056,6 +1056,11 @@ hr{
     cursor: no-drop;
     width: 78%;
 }
+.box-General-Info .box-body .Email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .box-General-Info .box-body a {
     color: var(--blue-color);
     margin-left: 20px;
