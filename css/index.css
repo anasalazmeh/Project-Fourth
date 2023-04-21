@@ -1145,6 +1145,7 @@ label{
 }
 .box-Widgets-Control .box-body .block .checkbox label:hover .checkbox-div{
     border-color: var(--blue-color);
+
 }
 .box-Widgets-Control .box-body .block .checkbox input{
     appearance: none;
@@ -1163,6 +1164,8 @@ label{
     align-items: center;
     overflow: hidden;
     margin-right: 10px;
+    transition: 0.5s;
+
 }
 .box-Widgets-Control .box-body .block .checkbox .checkbox-div i{
     background-color: var(--blue-color);
@@ -1186,6 +1189,7 @@ label{
 .box-Widgets-Control .box-body .block .checkbox input:checked+.checkbox-div{
     border-color: var(--blue-color);
     /* border: none; */
+    background-color: var(--blue-color);
 
 }
 .box-Backup-Manager .box-body .radio input{
