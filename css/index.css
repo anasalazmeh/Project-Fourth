@@ -715,6 +715,20 @@ hr{
     text-decoration: line-through;
     opacity: 0.3;
 }
+@media (min-width:1201px) {
+    .box-Top-Search{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+@media (max-width:1200px) {
+    .box-Top-Search{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
 .box-Top-Search .box-body .header{margin-bottom: 20px;}
 .box-Top-Search .box-body .header p{
     font-size: 20px;
@@ -734,6 +748,21 @@ hr{
     border-radius: 10px;
     text-align: center;
 }
+@media (min-width:1201px) {
+    .box-Latest-Uploads{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+@media (max-width:1200px) {
+    .box-Latest-Uploads{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+
 .box-Latest-Uploads .box-body .block{
     display: flex;
     justify-content: space-between;
@@ -762,6 +791,20 @@ hr{
     padding: 3px 10px;
     border-radius: 10px;
     text-align: center;
+}
+@media (min-width:1201px) {
+    .box-Last-Project{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+@media (max-width:1200px) {
+    .box-Last-Project{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
 }
 .box-Last-Project .box-body{
     display: flex;
@@ -874,6 +917,20 @@ hr{
         display: none;
     }
 }
+@media (min-width:1201px) {
+    .box-Reminders{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+@media (max-width:1200px) {
+    .box-Reminders{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
 .box-Reminders .box-body .block{
     display: flex;
     flex-direction: row;
@@ -918,6 +975,20 @@ hr{
 .box-Reminders .box-body .shape.c-green{border-right-color: var(--green-color);}
 .box-Reminders .box-body .shape.c-orange{border-right-color: var(--orange-color);}
 .box-Reminders .box-body .shape.c-red{border-right-color: var(--red-color);}
+@media (min-width:1201px) {
+    .box-Latest-Post{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+@media (max-width:1200px) {
+    .box-Latest-Post{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
 .box-Latest-Post .box-body .block-user{
     display: flex;
     align-items: center;
@@ -946,6 +1017,20 @@ hr{
     padding-top: 20px;
     font-size: 20px;
     color: var(--grey-color);
+}
+@media (min-width:1201px) {
+    .box-Social-Media-Stats{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+@media (max-width:1200px) {
+    .box-Social-Media-Stats{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
 }
 .box-Social-Media-Stats .box-body .block{
     display: flex;
@@ -996,7 +1081,20 @@ hr{
     background-color: #1da1f2;
 }
 
-
+@media (min-width:1201px) {
+    .box-project-table{
+        animation-name: bottom-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
+@media (max-width:1200px) {
+    .box-project-table{
+        animation-name: bottom-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }  
+}
 
 .box-project-table{
     grid-column: span 2;
@@ -2075,5 +2173,14 @@ font-size: 13px;
     }
     100%{
         transform: translateX(0px);
+    }
+}
+@keyframes bottom-div {
+    0%{
+        transform: translateY(800px);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(0px);
     }
 }
