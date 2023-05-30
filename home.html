@@ -146,6 +146,7 @@
                             </div>
                         </div>
                         <div class="box box-Quick">
+                            <div class="message" id="message">It was sent successfully</div>
                             <div class="box-header">
                                 <div class="text">
                                     <h2>Quick Draft</h2>
@@ -153,12 +154,14 @@
                                 </div>
                             </div>
                             <div class="box-body">
-                                <input type="text" placeholder="Title">
-                                <textarea name="" id=""  rows="9" placeholder="Your Thought"></textarea>
-                                <div class="button"><a href="" class="button">save</a></div>
+
+                                <input type="text" placeholder="Title" id="text">
+                                <textarea name=""   rows="9" placeholder="Your Thought" id="textarea"></textarea>
+                                <div class="button"><div id="btn-save">save</div></div>
+    
                             </div>
                         </div>
-                        <div class="box box-Yearly">
+                        <div class="box box-Yearly" id="box-Yearly">
                             <div class="box-header">
                                 <div class="text">
                                     <h2>Yearly Targets</h2>
@@ -205,7 +208,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box box-Tickets">
+                        <div class="box box-Tickets" id="box-Tickets">
                             <div class="box-header">
                                 <div class="text">
                                     <h2>Tickets Statistics</h2>
@@ -217,33 +220,33 @@
                                     <div class="icon">
                                         <i class="fa-regular fa-rectangle-list fa-2x c-orange "></i>
                                     </div>
-                                    <h2>2000</h2>
+                                    <h2>2500</h2>
                                     <p>Total</p>
                                 </div>
                                 <div class="block ">
                                     <div class="icon">
                                         <i class="fa-solid fa-spinner fa-2x c-blue "></i>
                                     </div>
-                                    <h2>2000</h2>
-                                    <p>Total</p>
+                                    <h2>500</h2>
+                                    <p>Pending</p>
                                 </div>
                                 <div class="block ">
                                     <div class="icon">
                                         <i class="fa-regular fa-circle-check fa-2x c-green"></i>
                                     </div>
-                                    <h2>2000</h2>
-                                    <p>Total</p>
+                                    <h2>1900</h2>
+                                    <p>Closed</p>
                                 </div>
                                 <div class="block ">
                                     <div class="icon">
                                         <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
                                     </div>
-                                    <h2>2000</h2>
-                                    <p>Total</p>
+                                    <h2>100</h2>
+                                    <p>Deleted</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="box box-Latest-News">
+                        <div class="box box-Latest-News"  >
                             <div class="box-header">
                                 <div class="text">
                                     <h2>Latest News</h2>
@@ -303,7 +306,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="box box-Latest-Tasks">
+                        <div class="box box-Latest-Tasks" >
                             <div class="box-header">
                                 <div class="text">
                                     <h2>Latest Tasks</h2>
@@ -825,5 +828,7 @@
 
     </div>
 </div>
+<script src="js/animation.js"></script>
+<script src="js/check-input.js"></script>
 </body>
 </html>

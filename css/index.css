@@ -46,8 +46,9 @@ html{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar-track {
-    background-color: white;
+    background-color: white ;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--blue-color);
     border-radius: 50px;
@@ -80,7 +81,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
 .page .nav .logo hr{
     border: none;
     width: 100%;
@@ -288,6 +291,11 @@ body{
 .main .box p{
     color: #888;
 }
+    .main .container .box-Welcome{
+        animation-name:left-div;
+        animation-duration: 2s;
+    
+    }
 .main .container .box-Welcome .box-header{
      margin-top: 0;
     background-color: #eee;
@@ -370,6 +378,32 @@ body{
     display: flex;
     flex-direction: column;
 }
+@media (min-width:1201px) {
+    .box-Quick{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        position: relative;
+    }
+}
+@media (max-width:1200px) {
+    .box-Quick{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        position: relative;
+        animation-play-state: paused;
+    }
+}
+
+.box-Quick .message{
+    background-color: var(--green-color);
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+}
 .box-Quick .box-body input{
     width: 100%;
     background-color: #EEE;
@@ -399,7 +433,7 @@ body{
     justify-content: flex-end;
     margin-top: 5px;
 }
-.box-Quick  .box-body a{
+.box-Quick  .box-body .button div{
     text-decoration: none;
     background-color: var(--blue-color);
     font-size: 15px;
@@ -407,8 +441,23 @@ body{
     color: white;
     padding: 5px 10px;
     text-align: center;
+    cursor: pointer;
 }
 
+@media (min-width:1201px) {
+    .box-Yearly{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
+@media (max-width:1200px) {
+    .box-Yearly{
+        animation-name: left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
 .box-Yearly .box-body .block-icon{
     display: flex;
     margin-bottom: 20px;
@@ -497,6 +546,21 @@ body{
 .box-Yearly .box-body  .text .body-hr.c-green{
     background-color:rgb(34 197 94 / 20%);
 }
+
+@media (min-width:1201px) {
+    .box-Tickets {
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
+@media (max-width:1200px) {
+    .box-Tickets {
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
 .box-Tickets .box-body{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(40%,1fr));
@@ -536,6 +600,21 @@ body{
     color: var(--green-color);
     margin-bottom: 20px;
 }
+@media (min-width:1201px) {
+    .box-Latest-News{
+        animation-name:left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
+@media (max-width:1200px) {
+    .box-Latest-News{
+        animation-name:left-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
+
 .box-Latest-News .box-body{
     padding-left: 20px;
     padding-right: 20px;
@@ -591,6 +670,21 @@ hr{
     border: 1px solid #EEE;
     width: 100%;
 }
+@media (min-width:1201px) {
+    .box-Latest-Tasks{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
+@media (max-width:1200px) {
+    .box-Latest-Tasks{
+        animation-name: rigth-div;
+        animation-duration: 2s;
+        animation-play-state: paused;
+    }
+}
+
 .box-Latest-Tasks .box-body .block{
     display: flex;
     justify-content: space-between;
@@ -1964,4 +2058,22 @@ font-size: 13px;
     padding:5px 10px;
     margin-top: 50px;
     border-radius: 10px;
+}
+@keyframes left-div {
+    0%{
+        transform: translateX(-800px);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes rigth-div {
+    0%{
+        transform: translateX(800px);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
