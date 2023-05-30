@@ -7,8 +7,8 @@ let box_Latest_Tasks=document.getElementById("box-Latest-Tasks")
 
 window.onscroll=function(){
 
-    let v=scrollY
-    console.log(v) 
+    // let v=scrollY
+    // console.log(v) 
     if(scrollY>=267 && scrollY<=650){
         document.styleSheets[0].cssRules[62].cssRules[0].style.setProperty("animation-play-state"," running", "important")
     }
@@ -85,7 +85,7 @@ window.onscroll=function(){
     if(scrollY>=2650){
         document.styleSheets[0].cssRules[182].cssRules[0].style.setProperty("animation-play-state"," running", "important")
     }
-    console.log(document.styleSheets[0].cssRules[61])
+    // console.log(document.styleSheets[0].cssRules[61])
     // if(scrollY>=159 && scrollY<=750){
     //     box_Tickets.style="animation-play-state: running;"
     //     box_Yearly.style="animation-play-state: running;"
